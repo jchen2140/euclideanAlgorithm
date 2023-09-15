@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main { 
+     public static void main(String[] args) {
+      /*int a = 100231;
+      int b = 62977;*/
+    Scanner myObj = new Scanner(System.in);
+    int a;
+    System.out.println("Enter value for a: ");
+    a = myObj.nextInt(); 
+    Scanner myObj2 = new Scanner(System.in);  
+    int b;
+    System.out.println("Enter value for b: ");
+    b = myObj2.nextInt(); 
+      while (a % b != 0)
+      {
+        int c = a%b;
+        a = b;
+        b = c;
+      }
+      System.out.print(b);
+    }
+    
+}
